@@ -9,7 +9,7 @@ var idCounter = 0;
  * @param {number} y - The y coordinate of the node
  * @param {number} z - The z coordinate of the node
  */
-function Node(x, y, z) {
+function Node(x, y, z, w) {
     /**
      * The x coordinate of the node on the grid.
      * @type number
@@ -25,6 +25,11 @@ function Node(x, y, z) {
      * @type number
      */
     this.z = z;
+    /**
+     * The weighting of the node.
+     * @type number
+     */
+    this.weight = w;
     /**
      * Neighboring nodes that are walkable from this node.
      * @type array
